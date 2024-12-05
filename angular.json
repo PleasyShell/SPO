@@ -30,7 +30,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/style/normalize.style.scss",
+              "src/style/modal.style.scss",
+              "src/style/input.style.scss",
+              "src/style/checkbox.style.scss",
+              "src/style/button.style.scss"
             ],
             "scripts": []
           },
@@ -93,7 +97,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/style/normalize.style.scss",
+              "src/style/modal.style.scss",
+              "src/style/input.style.scss",
+              "src/style/checkbox.style.scss",
+              "src/style/button.style.scss"
             ],
             "scripts": []
           }
