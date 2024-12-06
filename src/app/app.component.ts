@@ -21,7 +21,6 @@ export class AppComponent implements AfterContentChecked {
         this.cdref.detectChanges();
     };
 
-
     protected getState(outlet: RouterOutlet) {
 
         return outlet.activatedRouteData['state'];
