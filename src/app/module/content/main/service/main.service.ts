@@ -16,31 +16,31 @@ export class MainService {
         {
             Id: 2,
             Type: 'bio',
-            File: 'assets/ai.txt',
+            File: 'assets/bio.txt',
             Text: 'Биомедицинские технологии и биоинженерия'
         },
         {
             Id: 3,
             Type: 'sint',
-            File: 'assets/ai.txt',
+            File: 'assets/sint.txt',
             Text: 'Инженерия синтетических организмов'
         },
         {
             Id: 4,
             Type: 'robo',
-            File: 'assets/ai.txt',
+            File: 'assets/robo.txt',
             Text: 'Инженерия робототехнических систем'
         },
         {
             Id: 5,
             Type: 'rad-x',
-            File: 'assets/ai.txt',
+            File: 'assets/rad-x.txt',
             Text: 'Инженерия ядерных реакторов'
         },
         {
             Id: 6,
             Type: 'vre',
-            File: 'assets/ai.txt',
+            File: 'assets/vre.txt',
             Text: 'Генетическая инженерия'
         }
     ];
