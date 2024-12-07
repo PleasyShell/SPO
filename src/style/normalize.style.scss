@@ -60,7 +60,11 @@
 }
 
 body {
-    background: #F7FAFC;
+    background-image: url('/assets/images/institute-1.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 input {
