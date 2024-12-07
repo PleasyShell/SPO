@@ -1,14 +1,17 @@
+import { AppComponent } from './app.component';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { SharedNavModule } from './module/component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NoticeService } from './module/component/notice';
+
+
 @NgModule({
     declarations: [
-        AppComponent,
+        AppComponent
     ],
     imports: [
         BrowserModule,
@@ -16,7 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         AppRoutingModule,
         SharedNavModule
     ],
-    providers: [],
+    providers: [NoticeService],
     bootstrap: [AppComponent]
 })
 

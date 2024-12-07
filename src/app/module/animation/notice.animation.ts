@@ -3,7 +3,7 @@ import {
     transition, animate, keyframes
 } from "@angular/animations";
 
-export const Notice = trigger('notice', [
+export const notice = trigger('notice', [
     state('isOpen', style({
         'max-height': '0px',
         opacity: 0
