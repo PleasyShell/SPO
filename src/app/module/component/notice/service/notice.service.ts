@@ -13,7 +13,7 @@ export class NoticeService {
     public getNotice(): TNotice[] {
 
         return [...this.noticeContent];
-    }
+    };
 
     public success(message: string, content?: string) {
 
@@ -84,5 +84,4 @@ export class NoticeService {
             this.removeNotice(noticeId);
         });
     };
-
 };

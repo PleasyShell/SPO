@@ -3,4 +3,4 @@ export type TNotice = {
     Message: string,
     Type: string,
     Content?: string
-}
+};
