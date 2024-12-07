@@ -20,7 +20,52 @@ export class MainModalService {
             DurationOfTraining: 5,
             CostPerYear: 210000,
             Description: '',
-        }
+        },
+        {
+            Id: 2,
+            Type: 'bio',
+            Text: 'Биомедицинские технологии и биоинженерия',
+            BudgetPlaces: 31,
+            DurationOfTraining: 4,
+            CostPerYear: 400000,
+            Description: '',
+        },
+        {
+            Id: 3,
+            Type: 'sint',
+            Text: 'Инженерия синтетических организмов',
+            BudgetPlaces: 5,
+            DurationOfTraining: 2,
+            CostPerYear: 380000,
+            Description: '',
+        },
+        {
+            Id: 4,
+            Type: 'robo',
+            Text: 'Инженерия робототехнических систем',
+            BudgetPlaces: 14,
+            DurationOfTraining: 6,
+            CostPerYear: 300000,
+            Description: '',
+        },
+        {
+            Id: 5,
+            Type: 'rad-x',
+            Text: 'Инженерия ядерных реакторов',
+            BudgetPlaces: 7,
+            DurationOfTraining: 7,
+            CostPerYear: 600000,
+            Description: '',
+        },
+        {
+            Id: 6,
+            Type: 'vre',
+            Text: 'Генетическая инженерия',
+            BudgetPlaces: 12,
+            DurationOfTraining: 9,
+            CostPerYear: 800000,
+            Description: '',
+        },
     ];
 
     private modal: TModalSubjectContent = initModalSubjectContent();
