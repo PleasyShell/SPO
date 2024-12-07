@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { initModalSubjectContent, TModalSubjectContent, TSubject } from '..';
-
+import { TSubject } from '..';
 
 @Injectable()
 
@@ -11,36 +10,40 @@ export class MainService {
         {
             Id: 1,
             Type: 'ai',
+            File: 'assets/ai.txt',
             Text: 'Инженерия систем искусственного интеллекта'
         },
         {
             Id: 2,
             Type: 'bio',
+            File: 'assets/ai.txt',
             Text: 'Биомедицинские технологии и биоинженерия'
         },
         {
             Id: 3,
             Type: 'sint',
+            File: 'assets/ai.txt',
             Text: 'Инженерия синтетических организмов'
         },
         {
             Id: 4,
             Type: 'robo',
+            File: 'assets/ai.txt',
             Text: 'Инженерия робототехнических систем'
         },
         {
             Id: 5,
             Type: 'rad-x',
+            File: 'assets/ai.txt',
             Text: 'Инженерия ядерных реакторов'
         },
         {
             Id: 6,
             Type: 'vre',
+            File: 'assets/ai.txt',
             Text: 'Генетическая инженерия'
         }
     ];
-
-    private modal: TModalSubjectContent = initModalSubjectContent();
 
 
     constructor(
@@ -51,23 +54,5 @@ export class MainService {
     public getAllSubjects(): TSubject[] {
 
         return this.subjects;
-    };
-
-    public openModal(item: TSubject): void {
-
-        if (item) {
-
-            this.modal = {
-                isOpen: true,
-                Content: {
-                    Id: item.Id,
-                    Type: item.Type,
-                    BudgetPlaces: 0,
-                    DurationOfTraining: 0,
-                    CostPerYear: 0,
-                    Description: '',
-                }
-            };
-        };
     };
 };

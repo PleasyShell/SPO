@@ -1,0 +1,21 @@
+<div class="modal-background" *ngIf="getViewContent().isOpen" @showModal>
+    <div class="modal-window">
+        <div class="modal-header">
+            <p class="modal-headertext-style">{{getViewContent().Content.Text}}</p>
+            <img class="close-button" src="assets/images/close.svg" (click)="closeModal()">
+        </div>
+        <div class="title-header">
+            <img class="modal-img" src="assets/images/{{getViewContent().Content.Type}}.png">
+            <div class="info">
+                <p class="less-info">Срок обучения: {{getViewContent().Content.DurationOfTraining | duration}}</p>
+                <p class="less-info">Бюджетный мест: {{getViewContent().Content.BudgetPlaces}}</p>
+                <p class="less-info">Стоимость в год: {{getViewContent().Content.CostPerYear}}</p>
+            </div>
+        </div>
+        <div class="modal-body">
+            {{getViewContent().Content.Description}}
+        </div>
+        <div class="modal-footer fix-footer">
+        </div>
+    </div>
+</div>

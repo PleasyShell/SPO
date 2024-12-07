@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MainService } from './service/main.service';
 import { TSubject } from './type/subject.type';
+import { MainModalService } from './service/main-modal.service';
 
 @Component({
     selector: 'main',
@@ -12,7 +13,8 @@ export class MainComponent {
 
 
     constructor(
-        private mainService: MainService
+        private mainService: MainService,
+        private modalService: MainModalService
     ) { }
 
 
@@ -21,8 +23,8 @@ export class MainComponent {
         return this.mainService.getAllSubjects();
     };
 
-    protected openModal(item: TSubject): void {
+    protected openModal(id: number, file: string): void {
 
-        this.mainService.openModal(item);
+        this.modalService.openModal(id, file);
     };
 };

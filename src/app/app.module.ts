@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedNavModule } from './module/component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 import { NoticeService } from './module/component/notice';
 
 
@@ -17,7 +17,8 @@ import { NoticeService } from './module/component/notice';
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
-        SharedNavModule
+        SharedNavModule,
+        HttpClientModule
     ],
     providers: [NoticeService],
     bootstrap: [AppComponent]
