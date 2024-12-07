@@ -209,6 +209,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: auto;
+
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 80px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #212529;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #414447;
+    }
 }
 
 input {
