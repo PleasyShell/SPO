@@ -1,0 +1,52 @@
+.nav-body {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 21px 0px 21px 0px;
+    background-color: #FFF;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-tab-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-tab {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    &-text {
+        font-size: 19px;
+        font-weight: 300;
+        cursor: pointer;
+
+        &:hover+.tab-active {
+            transform: scale(0.1);
+            transition: transform 0.2s;
+        }
+
+        &:hover+.tab-active.active {
+            transition: transform 0.2s;
+            transform: scale(1);
+        }
+    }
+}
+
+.tab-active {
+    position: absolute;
+    top: 35px;
+    transform: scale(1);
+    transition: transform 0.2s;
+    height: 1px;
+    background-color: #000000;
+
+    &.active {
+        width: 100%;
+        transition: 0.2s;
+    }
+}

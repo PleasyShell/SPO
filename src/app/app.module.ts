@@ -4,25 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedNavModule } from './module/component';
-import { MainComponent } from './module/content/main/main.component';
-import { AdmissionGuideComponent } from './module/content/admission-guide/admission-guide.component';
-import { AdvantagesComponent } from './module/content/advantages/advantages.component';
-import { ContactsComponent } from './module/content/contacts/contacts.component';
-import { FeedbackComponent } from './module/content/feedback/feedback.component';
-import { FaqComponent } from './module/content/faq/faq.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
         AppComponent,
-        MainComponent,
-        AdmissionGuideComponent,
-        AdvantagesComponent,
-        ContactsComponent,
-        FeedbackComponent,
-        FaqComponent
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
         SharedNavModule
     ],

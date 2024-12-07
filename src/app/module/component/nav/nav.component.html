@@ -1,8 +1,28 @@
 <div class="nav-body">
-    <span>Главная</span>
-    <span>Гид по поступлению</span>
-    <span>Преимущества</span>
-    <span>Контакты</span>
-    <span>Обратная связь</span>
-    <span>FAQ</span>
+    <div class="nav-tab-menu">
+        <div class="nav-tab">
+            <p class="nav-tab-text" [routerLink]="['']">Главная</p>
+            <span class="tab-active" [class.active]="isActive('/main')"></span>
+        </div>
+        <div class="nav-tab">
+            <p class="nav-tab-text" [routerLink]="['roles']">Гид по поступлению</p>
+            <span class="tab-active" [class.active]="isActive('/admission-guide')"></span>
+        </div>
+        <div class="nav-tab">
+            <p class="nav-tab-text" [routerLink]="['actions']">Преимущества</p>
+            <span class="tab-active" [class.active]="isActive('/advantages')"></span>
+        </div>
+        <div class="nav-tab">
+            <p class="nav-tab-text" [routerLink]="['actions']">Контакты</p>
+            <span class="tab-active" [class.active]="isActive('/contacts')"></span>
+        </div>
+        <div class="nav-tab">
+            <p class="nav-tab-text" [routerLink]="['actions']">Обратная связь</p>
+            <span class="tab-active" [class.active]="isActive('/contacts')"></span>
+        </div>
+        <div class="nav-tab">
+            <p class="nav-tab-text" [routerLink]="['actions']">FAQ</p>
+            <span class="tab-active" [class.active]="isActive('/faq')"></span>
+        </div>
+    </div>
 </div>
