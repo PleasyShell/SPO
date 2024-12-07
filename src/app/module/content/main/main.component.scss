@@ -2,12 +2,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 30px 400px 30px 400px;
+    padding: 110px 400px 40px 400px;
+    gap: 40px;
 }
 
 .fixable-image {
     width: 246px;
     height: 246px;
+
+    &.subject-img {
+        width: 65px;
+        height: 65px;
+    }
 }
 
 .podheader {
@@ -26,6 +32,7 @@
             font-size: 46px;
             font-weight: 400;
             line-height: 64px;
+            color: #000;
         }
 
         &-less {
@@ -44,6 +51,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .subject {
@@ -52,4 +60,12 @@
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 14px;
+    }
 }

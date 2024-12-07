@@ -1,5 +1,5 @@
 .nav-body {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 21px 0px 21px 0px;
@@ -21,6 +21,7 @@
     justify-content: center;
 
     &-text {
+        color: #000000;
         font-size: 19px;
         font-weight: 200;
         cursor: pointer;
