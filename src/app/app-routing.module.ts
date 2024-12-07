@@ -31,11 +31,11 @@ const routes: Routes = [
     //     path: 'faq',
     //     loadChildren: () => import('').then(m => m.)
     // },
-    // {
-    //     path: '**',
-    //     redirectTo: 'main',
-    //     pathMatch: 'full',
-    // }
+    {
+        path: '**',
+        redirectTo: 'main',
+        pathMatch: 'full',
+    }
 ];
 
 @NgModule({
