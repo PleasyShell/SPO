@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent, RoutingMainModule } from '.';
+import {
+    MainComponent, MainService,
+    RoutingMainModule
+} from '.';
+
 
 @NgModule({
     declarations: [MainComponent],
@@ -11,7 +15,7 @@ import { MainComponent, RoutingMainModule } from '.';
     exports: [
         MainComponent
     ],
-    providers: []
+    providers: [MainService]
 })
 
 export class SharedMainModule { }

@@ -67,7 +67,6 @@ export class NoticeService {
         this.timerForNotice(noticeId);
     };
 
-
     public removeNotice(noticeId: string) {
 
         const index = this.noticeContent.findIndex(notice => notice.Id === noticeId);
@@ -76,7 +75,7 @@ export class NoticeService {
             this.noticeContent.splice(index, 1);
         };
     };
-
+    
 
     private timerForNotice(noticeId: string) {
 

@@ -7,8 +7,11 @@
         </div>
     </div>
     <div class="subject-container">
-        <div class="subject">
-            123
+        <div class="subject" *ngFor="let subject of getAllSubjects()" (click)="openModal(subject)">
+            <div class="subject-podheader">
+                <img class="fixable-image subject-img" src="assets/images/{{subject.Type}}.png">
+            </div>
+            <span class="subject-text">{{subject.Text | uppercase}}</span>
         </div>
     </div>
 </div>

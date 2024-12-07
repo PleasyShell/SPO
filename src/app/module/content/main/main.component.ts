@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MainService } from './service/main.service';
+import { TSubject } from './type/subject.type';
 
 @Component({
     selector: 'main',
@@ -8,4 +10,19 @@ import { Component } from '@angular/core';
 
 export class MainComponent {
 
+
+    constructor(
+        private mainService: MainService
+    ) { }
+
+
+    protected getAllSubjects(): TSubject[] {
+
+        return this.mainService.getAllSubjects();
+    };
+
+    protected openModal(item: TSubject): void {
+
+        this.mainService.openModal(item);
+    };
 };

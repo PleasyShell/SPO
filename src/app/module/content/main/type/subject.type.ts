@@ -1,0 +1,46 @@
+export type TSubject = {
+    Id: number,
+    Type: string,
+    Text: string
+};
+
+export type TModalSubjectContent = {
+    isOpen: boolean,
+    Content: TSubjectContent
+};
+
+export type TSubjectContent = {
+    Id: number,
+    Type: string,
+    BudgetPlaces: number,
+    DurationOfTraining: number,
+    CostPerYear: number
+    Description: string,
+};
+
+
+export const initSubject = (): TSubject => {
+    return {
+        Id: 0,
+        Type: '',
+        Text: ''
+    };
+};
+
+export const initSubjectContent = (): TSubjectContent => {
+    return {
+        Id: 0,
+        Type: '',
+        BudgetPlaces: 0,
+        DurationOfTraining: 0,
+        CostPerYear: 0,
+        Description: '',
+    };
+};
+
+export const initModalSubjectContent = (): TModalSubjectContent => {
+    return {
+        isOpen: false,
+        Content: initSubjectContent()
+    };
+};
