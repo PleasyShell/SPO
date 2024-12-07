@@ -9,33 +9,34 @@ const routes: Routes = [
     },
     {
         path: 'main',
-        loadChildren: () => import('').then(m => m.)
+        loadChildren: () => import('./module/content/main/shared-main.module').then(m => m.SharedMainModule)
     },
-    {
-        path: 'admission-guide',
-        loadChildren: () => import('').then(m => m.)
-    },
-    {
-        path: 'advantages',
-        loadChildren: () => import('').then(m => m.)
-    },
-    {
-        path: 'contacts',
-        loadChildren: () => import('').then(m => m.)
-    },
-    {
-        path: 'feedback',
-        loadChildren: () => import('').then(m => m.)
-    },
-    {
-        path: 'faq',
-        loadChildren: () => import('').then(m => m.)
-    },
-    {
-        path: '**',
-        redirectTo: 'main',
-        pathMatch: 'full',
-    }];
+    // {
+    //     path: 'admission-guide',
+    //     loadChildren: () => import('').then(m => m.)
+    // },
+    // {
+    //     path: 'advantages',
+    //     loadChildren: () => import('').then(m => m.)
+    // },
+    // {
+    //     path: 'contacts',
+    //     loadChildren: () => import('').then(m => m.)
+    // },
+    // {
+    //     path: 'feedback',
+    //     loadChildren: () => import('').then(m => m.)
+    // },
+    // {
+    //     path: 'faq',
+    //     loadChildren: () => import('').then(m => m.)
+    // },
+    // {
+    //     path: '**',
+    //     redirectTo: 'main',
+    //     pathMatch: 'full',
+    // }
+];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
