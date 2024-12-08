@@ -1,1 +1,19 @@
-<p>advantages works!</p>
+<div class="wrapper">
+    <institute-podheader></institute-podheader>
+    <div class="info-container">
+        <span class="main-text">Преимущества</span>
+        <span class="less-text">
+            Наше учебное заведение предлагает комфортную адаптацию, доступные стипендии и уютные общежития. Мы
+            поддерживаем студентов в построении карьеры через стажировки и взаимодействие с работодателями. Насыщенная
+            студенческая жизнь включает разнообразные мероприятия, способствующие развитию навыков. Выбирая нас, вы
+            выбираете успешное будущее!</span>
+    </div>
+    <div class="card-container">
+        <div class="card" *ngFor="let card of getAllCards()">
+            <img class="card-img" src="assets/images/advantages-{{card.Id}}.png">
+            <div class="card-text-container">
+                <span>{{card.Text | uppercase }}</span>
+            </div>
+        </div>
+    </div>
+</div>

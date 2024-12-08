@@ -308,3 +308,18 @@ ul {
     padding: 110px 400px 40px 400px;
     gap: 40px;
 }
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text {
+    font-size: 36px;
+}
+
+.less-text {
+    font-size: 19px;
+    font-weight: 200;
+    color: #212529;
+}

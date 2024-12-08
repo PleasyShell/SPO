@@ -15,10 +15,10 @@ const routes: Routes = [
     //     path: 'admission-guide',
     //     loadChildren: () => import('').then(m => m.)
     // },
-    // {
-    //     path: 'advantages',
-    //     loadChildren: () => import('').then(m => m.)
-    // },
+    {
+        path: 'advantages',
+        loadChildren: () => import('./module/content/advantages/shared-advantages.module').then(m => m.SharedAdvantagesModule)
+    },
     {
         path: 'contacts',
         loadChildren: () => import('./module/content/contacts/shared-contacts.module').then(m => m.SharedContactsModule)
