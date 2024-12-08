@@ -5,6 +5,8 @@ import {
     MainModalService, MainService, RoutingMainModule
 } from '.';
 
+import { SharedInstitutePodheaderModule } from '../../component/institute-podheader';
+
 
 @NgModule({
     declarations: [
@@ -15,7 +17,7 @@ import {
     imports: [
         CommonModule,
         RoutingMainModule,
-        
+        SharedInstitutePodheaderModule
     ],
     providers: [MainService, MainModalService]
 })

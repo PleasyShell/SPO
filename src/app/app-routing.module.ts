@@ -19,10 +19,10 @@ const routes: Routes = [
     //     path: 'advantages',
     //     loadChildren: () => import('').then(m => m.)
     // },
-    // {
-    //     path: 'contacts',
-    //     loadChildren: () => import('').then(m => m.)
-    // },
+    {
+        path: 'contacts',
+        loadChildren: () => import('./module/content/contacts/shared-contacts.module').then(m => m.SharedContactsModule)
+    },
     // {
     //     path: 'feedback',
     //     loadChildren: () => import('').then(m => m.)

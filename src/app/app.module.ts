@@ -6,8 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedNavModule } from './module/component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { NoticeService } from './module/component/notice';
-
 
 @NgModule({
     declarations: [
@@ -20,7 +18,7 @@ import { NoticeService } from './module/component/notice';
         SharedNavModule,
         HttpClientModule
     ],
-    providers: [NoticeService],
+    providers: [],
     bootstrap: [AppComponent]
 })
 

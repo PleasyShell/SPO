@@ -1,13 +1,7 @@
 <main-modal></main-modal>
 
 <div class="wrapper">
-    <div class="podheader">
-        <img src="assets/images/institute-logo.png" class="fixable-image">
-        <div class="podheader-text">
-            <span class="podheader-text-main">INSTITUTE</span>
-            <span class="podheader-text-less">СРЕДНЕ ПРОФЕССИОНАЛЬНОЕ ОБРАЗОВАНИЕ (КОЛЛЕДЖ)</span>
-        </div>
-    </div>
+    <institute-podheader></institute-podheader>
     <div class="subject-container">
         <div class="subject" *ngFor="let subject of getAllSubjects()" (click)="openModal(subject.Id, subject.File)">
             <div class="subject-podheader">

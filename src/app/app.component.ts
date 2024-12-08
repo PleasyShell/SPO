@@ -1,6 +1,6 @@
 import {
-    AfterContentChecked, AfterViewInit, ChangeDetectorRef, Component,
-    ElementRef, OnInit, ViewChild
+    AfterContentChecked, AfterViewInit,
+    ChangeDetectorRef, Component, ElementRef, ViewChild
 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { routerTransition } from './module/animation';

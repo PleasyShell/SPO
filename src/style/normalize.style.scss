@@ -300,3 +300,11 @@ ul {
     margin: 0;
     list-style: none;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 110px 400px 40px 400px;
+    gap: 40px;
+}

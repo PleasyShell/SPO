@@ -1,1 +1,13 @@
-<p>contacts works!</p>
+<div class="wrapper">
+    <institute-podheader></institute-podheader>
+    <div class="info-container">
+        <span class="main-text">Контакты</span>
+        <span class="less-text">
+            Приемная комиссия представлена тремя офисами для поступающих на программы высшего образования.
+            На программы среднего профессионального образования заявление можно подать по четырем адресам в зависимости
+            от выбранного направления подготовки.</span>
+    </div>
+    <google-map width="100%" height="500px" [center]="{lat: 51.678418, lng: 7.809007}" [zoom]="8">
+        <map-marker [position]="{lat: 51.678418, lng: 7.809007}"></map-marker>
+    </google-map>
+</div>
