@@ -23,10 +23,10 @@ const routes: Routes = [
         path: 'feedback',
         loadChildren: () => import('./module/content/feedback/shared-feedback.module').then(m => m.SharedFeedbackModule)
     },
-    // {
-    //     path: 'faq',
-    //     loadChildren: () => import('').then(m => m.)
-    // },
+    {
+        path: 'personal-account',
+        loadChildren: () => import('./module/content/personal-account/shared-personal-account.module').then(m => m.SharedPersonalAccountModule)
+    },
     {
         path: '**',
         redirectTo: 'main',
