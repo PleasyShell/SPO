@@ -11,10 +11,6 @@ const routes: Routes = [
         path: 'main',
         loadChildren: () => import('./module/content/main/shared-main.module').then(m => m.SharedMainModule)
     },
-    // {
-    //     path: 'admission-guide',
-    //     loadChildren: () => import('').then(m => m.)
-    // },
     {
         path: 'advantages',
         loadChildren: () => import('./module/content/advantages/shared-advantages.module').then(m => m.SharedAdvantagesModule)
@@ -23,10 +19,10 @@ const routes: Routes = [
         path: 'contacts',
         loadChildren: () => import('./module/content/contacts/shared-contacts.module').then(m => m.SharedContactsModule)
     },
-    // {
-    //     path: 'feedback',
-    //     loadChildren: () => import('').then(m => m.)
-    // },
+    {
+        path: 'feedback',
+        loadChildren: () => import('./module/content/feedback/shared-feedback.module').then(m => m.SharedFeedbackModule)
+    },
     // {
     //     path: 'faq',
     //     loadChildren: () => import('').then(m => m.)

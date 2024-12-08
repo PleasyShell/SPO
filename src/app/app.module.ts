@@ -3,9 +3,9 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedNavModule } from './module/component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedNavModule } from './module/component/nav/shared-nav.module';
 
 @NgModule({
     declarations: [
@@ -18,7 +18,6 @@ import { HttpClientModule } from '@angular/common/http';
         SharedNavModule,
         HttpClientModule
     ],
-    providers: [],
     bootstrap: [AppComponent]
 })
 

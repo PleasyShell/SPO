@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedInstitutePodheaderModule } from '../../component/institute-podheader';
+import { RoutingFeedbackModule } from './routing-feedback.module';
+import { FeedbackComponent } from './feedback.component';
 
 
 @NgModule({
-    declarations: [],
+    declarations: [
+        FeedbackComponent
+    ],
     imports: [
-        CommonModule
-    ]
+        CommonModule,
+        SharedInstitutePodheaderModule,
+        RoutingFeedbackModule
+    ],
 })
 
 export class SharedFeedbackModule { }

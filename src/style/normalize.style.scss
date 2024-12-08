@@ -210,7 +210,7 @@ body {
     background-size: cover;
     overflow: auto;
 
-    
+
     &::-webkit-scrollbar {
         width: 5px;
     }
@@ -271,6 +271,7 @@ textarea {
 }
 
 button {
+    color: #fff;
     height: 35px;
     padding: 6px 15px;
     border-radius: 5px;
@@ -307,6 +308,7 @@ ul {
     flex-direction: column;
     padding: 110px 400px 40px 400px;
     gap: 40px;
+    align-items: center;
 }
 
 .info-container {
