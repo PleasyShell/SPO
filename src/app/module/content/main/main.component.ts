@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MainService } from './service/main.service';
-import { TSubject } from './type/subject.type';
 import { MainModalService } from './service/main-modal.service';
+import { TSubject } from './type';
 
 @Component({
     selector: 'main',

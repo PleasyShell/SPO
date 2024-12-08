@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { AdvantagesService } from './service/advantages.service';
-import { TAdvantages } from './type/advantages.type';
+import { AdvantagesService } from './service';
+import { TAdvantages } from './type';
+
 
 @Component({
     selector: 'advantages',

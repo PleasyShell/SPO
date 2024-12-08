@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { openWindow } from 'src/app/module/animation';
-import { MainModalService, TModalSubjectContent } from '../..';
+import { MainModalService } from '../../service';
+import { TModalSubjectContent } from '../../type';
 
 @Component({
     selector: 'main-modal',
@@ -15,7 +16,7 @@ export class MainModalComponent {
         private modalService: MainModalService
     ) { }
 
-    
+
     protected getViewContent(): TModalSubjectContent {
 
         return this.modalService.getModalData();

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { TSubject } from '..';
+import { TSubject } from '../type';
 
 @Injectable()
 

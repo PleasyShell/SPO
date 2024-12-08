@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import {
     initModalSubjectContent, TModalSubjectContent,
     TSubjectContent
-} from '..';
-
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+} from '../type';
 
 @Injectable()
 
