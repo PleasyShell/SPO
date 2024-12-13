@@ -18,6 +18,6 @@ export const notice = trigger('notice', [
         animate(
             "0.30s ease-in",
             style({ opacity: 0, transform: "translateX(100px)" })
-          ),
+        ),
     ])
 ])

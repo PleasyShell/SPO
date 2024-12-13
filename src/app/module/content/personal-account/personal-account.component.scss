@@ -34,7 +34,10 @@
     color: #333;
 }
 
-.description, .worldview, .favorite-books, .achievements {
+.description,
+.worldview,
+.favorite-books,
+.achievements {
     background: #f9f9f9;
     border-radius: 10px;
     padding: 15px;
@@ -46,7 +49,8 @@ h3 {
     color: #555;
 }
 
-p, ul {
+p,
+ul {
     margin: 0;
     font-size: 16px;
     color: #666;
