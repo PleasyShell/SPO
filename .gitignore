@@ -40,3 +40,8 @@ Thumbs.db
 #Cache
 
 /.angular
+
+#desktop
+/SPO-win32-x64
+
+

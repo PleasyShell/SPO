@@ -27,6 +27,7 @@ export class PersonalAccountService {
 
 
     private generateStudents() {
+
         for (let i = 1; i <= 100; i++) {
             this.students.push({
                 Id: i,

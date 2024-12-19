@@ -1,12 +1,15 @@
 {
     "name": "spo",
     "version": "0.0.0",
+    "main": "app.js",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
-        "test": "ng test"
+        "test": "ng test",
+        "electron": "electron .",
+        "electron-build": "ng build && electron ."
     },
     "private": true,
     "dependencies": {
@@ -20,6 +23,8 @@
         "@angular/platform-browser": "^16.2.0",
         "@angular/platform-browser-dynamic": "^16.2.0",
         "@angular/router": "^16.2.0",
+        "electron": "^33.2.1",
+        "electron-packager": "^17.1.2",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.13.0"
