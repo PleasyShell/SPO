@@ -51,7 +51,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let student of getAllStudents()">
+                <tr *ngFor="let student of getAllStudents()" (click)="redirect()">
                     <td>{{ student.Id }}</td>
                     <td>{{ student.LastName }}</td>
                     <td>{{ student.FirstName }}</td>

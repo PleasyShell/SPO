@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { PersonalAccountService } from './service';
 import { TStudent } from './type';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
     selector: 'app-personal-account',
@@ -11,13 +12,19 @@ export class PersonalAccountComponent {
 
 
     constructor(
-        private personalAccountService: PersonalAccountService
+        private personalAccountService: PersonalAccountService,
+        @Inject(DOCUMENT) private document: Document
     ) { }
 
 
     protected getAllStudents(): TStudent[] {
 
         return this.personalAccountService.getStudents();
+    };
+
+    protected redirect() {
+
+        this.document.location.href = 'https://asurco.ru/spo';
     };
 
 };
